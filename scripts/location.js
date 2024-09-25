@@ -1,0 +1,1 @@
+document.getElementById("currentLocation").innerHTML = window.location.pathname;

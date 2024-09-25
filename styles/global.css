@@ -1,0 +1,85 @@
+@property --bg {
+   syntax: "<color>";
+   inherits: false;
+   initial-value: #f4f9fc; 
+}
+
+@property --primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #152128; 
+}
+
+* {
+    margin: 0;
+}
+
+/* :root {
+
+} */
+
+/* Primary */
+
+body {
+    margin: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+    height: 100vh;
+}
+
+.pagewrap {
+    padding: 1rem;
+    background: var(--bg);
+    min-height: calc(100% - 40px);
+}
+
+#directory {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+#directory p {
+    font-size: large;
+    padding-bottom: .5rem;
+}
+
+/* Divs */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.verticalline {
+    width: 1px;
+    height: 100%;
+    border-style: none none none solid;
+    border-color: var(--primary);
+}
+
+.footer {
+    text-align: center;
+
+    /* display: table-row; */
+    /* height: 0; */
+}
+
+/* Text */
+
+.title {
+    font-size: 2rem;
+}
+
+h1, h2, p{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
